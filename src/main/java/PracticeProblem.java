@@ -19,21 +19,49 @@ public class PracticeProblem {
 
 	public static void q1() {
 		//Write question 1 code here
+		Scanner input = new Scanner(System.in);
+		System.out.print("Input a number: ");
+		int a = input.nextInt();
+		System.out.print(Math.abs(a));
+		input.nextLine();
 		
 	}
 
 	public static void q2() {
 		//Write question 2 code here
+		Scanner input = new Scanner(System.in);
+		System.out.print("Input a number: ");
+		int b = input.nextInt();
+		input.nextLine();
+		System.out.println("Input another number: ");
+		int c = input.nextInt();
+		input.nextLine();
+		System.out.println(Math.floor(b/c));
+		System.out.println(Math.ceil(b/c));
 		
 	}
 
 	public static void q3() {
 		//Write question 3 code here
+		Scanner input = new Scanner(System.in);
+		System.out.print("Input a number: ");
+		int d = input.nextInt();
+		System.out.print(Math.round(Math.sqrt(d)));
+		input.nextLine();
 		
 	}
 
 	public static void q4() {
 		//Write question 4 code here
+		Scanner input = new Scanner(System.in);
+		System.out.print("Input a number: ");
+		int e = input.nextInt();
+		input.nextLine();
+		System.out.print("Input another number: ");
+		int f = input.nextInt();
+		input.nextLine();
+		System.out.println(Math.pow(e, f));
+
 		
 	}
 
