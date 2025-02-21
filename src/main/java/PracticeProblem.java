@@ -68,13 +68,13 @@ public class PracticeProblem {
 	public static void q5() {
 		//Write question 5 code here
 		Scanner input = new Scanner(System.in);
-		System.out.print("Input a number. ");
+		System.out.print("Input a number: ");
 		double g = input.nextDouble();
 		input.nextLine();
-		System.out.print("Input another number. ");
+		System.out.print("Input another number: ");
 		double h = input.nextDouble();
 		input.nextLine();
-		System.out.print("Input one more number. ");
+		System.out.print("Input one more number: ");
 		double i = input.nextDouble();
 		input.nextLine();
 		System.out.println(Math.max(Math.max(g, h), i));
@@ -151,8 +151,8 @@ public class PracticeProblem {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Input a word: ");
 		String lets = input.nextLine();
-		System.out.println(lets.substring(0, 3));
-		System.out.println(lets.substring(-4));
+		System.out.println(lets.substring(0, 4));
+		System.out.println(lets.substring(lets.length() -4));
 		
 	}
 	
