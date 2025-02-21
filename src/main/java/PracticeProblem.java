@@ -21,7 +21,7 @@ public class PracticeProblem {
 		//Write question 1 code here
 		Scanner input = new Scanner(System.in);
 		System.out.print("Input a number: ");
-		int a = input.nextInt();
+		double a = input.nextDouble();
 		System.out.print(Math.abs(a));
 		input.nextLine();
 		
@@ -30,11 +30,11 @@ public class PracticeProblem {
 	public static void q2() {
 		//Write question 2 code here
 		Scanner input = new Scanner(System.in);
-		System.out.print("Input a number: ");
-		int b = input.nextInt();
+		System.out.print("Input a number. ");
+		double b = input.nextDouble();
 		input.nextLine();
-		System.out.println("Input another number: ");
-		int c = input.nextInt();
+		System.out.print("Input another number. ");
+		double c = input.nextDouble();
 		input.nextLine();
 		System.out.println(Math.floor(b/c));
 		System.out.println(Math.ceil(b/c));
@@ -44,7 +44,7 @@ public class PracticeProblem {
 	public static void q3() {
 		//Write question 3 code here
 		Scanner input = new Scanner(System.in);
-		System.out.print("Input a number: ");
+		System.out.print("Input a number. ");
 		int d = input.nextInt();
 		System.out.print(Math.round(Math.sqrt(d)));
 		input.nextLine();
@@ -68,13 +68,13 @@ public class PracticeProblem {
 	public static void q5() {
 		//Write question 5 code here
 		Scanner input = new Scanner(System.in);
-		System.out.print("Input a number: ");
+		System.out.print("Input a number. ");
 		int g = input.nextInt();
 		input.nextLine();
-		System.out.print("Input another number: ");
+		System.out.print("Input another number. ");
 		int h = input.nextInt();
 		input.nextLine();
-		System.out.print("Input one more number: ");
+		System.out.print("Input one more number. ");
 		int i = input.nextInt();
 		input.nextLine();
 		System.out.println(Math.max(g, h, i));
