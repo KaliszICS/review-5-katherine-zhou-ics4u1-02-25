@@ -22,7 +22,7 @@ public class PracticeProblem {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Input a number: ");
 		double a = input.nextDouble();
-		System.out.print(Math.abs(a));
+		System.out.println(Math.abs(a));
 		input.nextLine();
 		
 	}
@@ -30,10 +30,10 @@ public class PracticeProblem {
 	public static void q2() {
 		//Write question 2 code here
 		Scanner input = new Scanner(System.in);
-		System.out.print("Input a number. ");
+		System.out.print("Input a number: ");
 		double b = input.nextDouble();
 		input.nextLine();
-		System.out.print("Input another number. ");
+		System.out.print("Input another number: ");
 		double c = input.nextDouble();
 		input.nextLine();
 		System.out.println(Math.floor(b/c));
@@ -44,9 +44,9 @@ public class PracticeProblem {
 	public static void q3() {
 		//Write question 3 code here
 		Scanner input = new Scanner(System.in);
-		System.out.print("Input a number. ");
+		System.out.print("Input a number: ");
 		int d = input.nextInt();
-		System.out.print(Math.round(Math.sqrt(d)));
+		System.out.println(Math.round(Math.sqrt(d)));
 		input.nextLine();
 		
 	}
@@ -69,16 +69,16 @@ public class PracticeProblem {
 		//Write question 5 code here
 		Scanner input = new Scanner(System.in);
 		System.out.print("Input a number. ");
-		int g = input.nextInt();
+		double g = input.nextDouble();
 		input.nextLine();
 		System.out.print("Input another number. ");
-		int h = input.nextInt();
+		double h = input.nextDouble();
 		input.nextLine();
 		System.out.print("Input one more number. ");
-		int i = input.nextInt();
+		double i = input.nextDouble();
 		input.nextLine();
-		System.out.println(Math.max(g, h, i));
-		System.out.println(Math.min (g,h,i));
+		System.out.println(Math.max(Math.max(g, h), i));
+		System.out.println(Math.min(Math.min(g, h), i));
 
 		
 		
@@ -105,9 +105,9 @@ public class PracticeProblem {
 		System.out.print("Input a word: ");
 		String word = input.nextLine();
 		System.out.print("Input a letter: ");
-		int ltr = input.nextLine();
-		System.out.println(word.startsWith(ltr));
-		System.out.println(word.endsWith(ltr));
+		String ltr = input.nextLine();
+		System.out.println(word.indexOf(ltr));
+		System.out.println(word.lastIndexOf(ltr));
 
 		
 	}
@@ -140,8 +140,9 @@ public class PracticeProblem {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Input a sentence: ");
 		String oui = input.nextLine();
-		System.out.println(oui.toUpperCase(oui.trim()));
-		System.out.println(oui.toLowerCase(oui.trim()));
+		oui = oui.trim();
+		System.out.println(oui.toUpperCase());
+		System.out.println(oui.toLowerCase());
 		
 	}
 
@@ -151,7 +152,7 @@ public class PracticeProblem {
 		System.out.print("Input a word: ");
 		String lets = input.nextLine();
 		System.out.println(lets.substring(0, 3));
-		System.out.println(lets.substring(lets.substring() -4));
+		System.out.println(lets.substring(-4));
 		
 	}
 	
